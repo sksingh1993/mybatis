@@ -1,15 +1,14 @@
 package com.example.mybatis.model;
 
-public class Employee {
-
+public class User {
 	private long id;
     private String firstName;
     private String lastName;
     private String emailAddress;
-    public Employee() {
-
-    }
-	public Employee(long id, String firstName, String lastName, String emailAddress) {
+	public User() {
+		
+	}
+	public User(long id, String firstName, String lastName, String emailAddress) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -40,5 +39,7 @@ public class Employee {
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
+    
 	
+    
 }

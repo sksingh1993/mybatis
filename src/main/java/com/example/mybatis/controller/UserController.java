@@ -12,30 +12,30 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.mybatis.model.Employee;
-import com.example.mybatis.service.EmployeeService;
+import com.example.mybatis.model.User;
+import com.example.mybatis.service.UserService;
 
 @RestController
-@RequestMapping("/employee")
-public class EmployeeController {
+@RequestMapping("/users")
+public class UserController {
+
 	@Autowired
-	private EmployeeService employeeService;
+	private UserService userService;
 	
 	@GetMapping("/")
-	public List < Employee > findAll(){
-		return employeeService.findAll();
+	public List < User > findAll(){
+		return userService.findAll();
 	}
-	@GetMapping("/{id}")
-    public Employee findById(@PathVariable long id) {
-		return employeeService.findById(id);
-    }
+//	@GetMapping("/{id}")
+//    public User findById(@PathVariable long id) {
+//		return userService.findById(id);
+//    }
 //	@DeleteMapping("/{id}")
 //    public int deleteById(@PathVariable long id) {
-//		return employeeService.deleteById(id);
+//		return userService.deleteById(id);
 //    }
 //	@PostMapping("/")
-//    public int insert(@RequestBody Employee employee) {
-//		return employeeService.insert(employee);
+//    public int insert(@RequestBody User user) {
+//		return userService.insert(user);
 //    }
-
-
 }
