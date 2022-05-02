@@ -32,10 +32,10 @@ public class EmployeeController {
 //    public int deleteById(@PathVariable long id) {
 //		return employeeService.deleteById(id);
 //    }
-//	@PostMapping("/")
-//    public int insert(@RequestBody Employee employee) {
-//		return employeeService.insert(employee);
-//    }
+	@PostMapping("/")
+    public int insert(@RequestBody Employee employee) {
+		return employeeService.insert(employee);
+    }
 
 
 }

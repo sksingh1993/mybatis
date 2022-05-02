@@ -34,8 +34,8 @@ public class UserController {
 //    public int deleteById(@PathVariable long id) {
 //		return userService.deleteById(id);
 //    }
-//	@PostMapping("/")
-//    public int insert(@RequestBody User user) {
-//		return userService.insert(user);
-//    }
+	@PostMapping("/")
+    public int insert(@RequestBody User user) {
+		return userService.insert(user);
+    }
 }

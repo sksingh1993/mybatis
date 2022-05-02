@@ -13,7 +13,7 @@ public interface UserDao {
 //
 //    public int deleteById(long id);
 //
-//    public int insert(User User);
+    public int insert(User User);
 
 
 }

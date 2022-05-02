@@ -36,7 +36,7 @@ public interface EmployeeMapper {
     public int deleteById(long id);
 
     @Insert("INSERT INTO employees(id, first_name, last_name,email_address) " +
-        " VALUES (#{id}, #{firstName}, #{lastName}, #{emailId})")
+        " VALUES (#{id}, #{firstName}, #{lastName}, #{emailAddress})")
     public int insert(Employee employee);
 
     @Update("Update employees set first_name=#{firstName}, " +

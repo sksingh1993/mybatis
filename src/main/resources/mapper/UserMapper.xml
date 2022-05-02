@@ -6,4 +6,10 @@
 	<select id ="findAll" resultType="com.example.mybatis.model.User">
 		select * from users
 	</select>
+	<insert id="insert" parameterType="com.example.mybatis.model.User" useGeneratedKeys="true" keyProperty="user.id">
+		INSERT INTO users(first_name, last_name,email_address)  VALUES (#{user.firstName}, #{user.lastName}, #{user.emailAddress})
+		<selectKey resultType="int" order="AFTER" keyProperty="user.id">
+          SELECT LAST_INSERT_ID()
+		</selectKey>
+	</insert>
 </mapper>

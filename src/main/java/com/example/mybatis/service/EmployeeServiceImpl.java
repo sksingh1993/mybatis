@@ -31,10 +31,10 @@ public class EmployeeServiceImpl implements EmployeeService{
 //		return employeeMapper.deleteById(id);
 //	}
 //
-//	@Override
-//	public int insert(Employee employee) {
-//		return employeeMapper.insert(employee);
-//	}
+	@Override
+	public int insert(Employee employee) {
+		return employeeMapper.insert(employee);
+	}
 
 	
     

@@ -26,9 +26,9 @@ public class UserDaoImp implements UserDao{
 //		return userMapper.deleteById(id);
 //	}
 //
-//	@Override
-//	public int insert(User User) {
-//		return userMapper.insert(User);
-//	}
+	@Override
+	public int insert(User User) {
+		return userMapper.insert(User);
+	}
 
 }

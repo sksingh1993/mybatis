@@ -11,6 +11,6 @@ public interface EmployeeService {
 //
 //    public int deleteById(long id);
 //
-//    public int insert(Employee employee);
+    public int insert(Employee employee);
 
 }
